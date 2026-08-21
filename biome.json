@@ -22,6 +22,15 @@
       "trailingCommas": "all"
     }
   },
+  "css": {
+    "parser": {
+      "cssModules": false,
+      "tailwindDirectives": true
+    },
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {

@@ -14,6 +14,7 @@ export const customFetch = async <T>(path: string, options: RequestInit = {}): P
     throw new ApiError(response.status);
   }
 
+  // DELETE は 204（ボディなし）のため json() せず undefined を返す
   if (response.status === 204) {
     return undefined as T;
   }
